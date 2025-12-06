@@ -8,7 +8,7 @@ const Signup = ({ setAuth }) => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL = 'http://localhost:5000/api/auth';
+  const API_URL = 'https://hub-loginpage.onrender.com/api/auth';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
