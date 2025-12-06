@@ -44,5 +44,5 @@ npm run dev
 ```Bash
 cd frontend
 npm install
-<!-- # Note: If running locally, update API_URL in Login.jsx/Signup.jsx to http://localhost:5000/api/auth -->
+# Note: If running locally, update API_URL in Login.jsx/Signup.jsx to http://localhost:5000/api/auth
 npm run dev
