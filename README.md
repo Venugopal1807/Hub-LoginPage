@@ -12,7 +12,7 @@ This project demonstrates a complete Signup/Login flow, protected dashboard rout
 
 ---
 
-## Bonus Feature: n8n Automation
+## Features: n8n Automation
 **Requirement Achieved:** "Add an n8n workflow that gets triggered on every new signup."
 
 I have implemented a live automation pipeline:
