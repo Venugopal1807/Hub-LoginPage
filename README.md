@@ -39,10 +39,11 @@ npm install
 # JWT_SECRET=your_jwt_secret
 # N8N_WEBHOOK_URL=your_n8n_production_url
 npm run dev
-
+```
 ### 2. Frontend Setup
-```bash
-cd Frontend
+Bash
+
+cd frontend
 npm install
 # Note: If running locally, update API_URL in Login.jsx/Signup.jsx to http://localhost:5000/api/auth
 npm run dev
