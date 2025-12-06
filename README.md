@@ -46,3 +46,16 @@ cd frontend
 npm install
 # Note: If running locally, update API_URL in Login.jsx/Signup.jsx to http://localhost:5000/api/auth
 npm run dev
+```
+---
+## Implementation Details & Trade-offs
+
+### Why Separate Deployment?
+I chose to deploy the Frontend on Vercel and Backend on Render separately (instead of a monolith) to simulate a real-world microservice architecture. This caused some CORS/URL issues initially, but it ensures better scalability.
+
+### The n8n Integration
+The hardest part was ensuring the n8n Webhook worked in Production. The "Test URL" worked locally, but I realized I had to switch to the "Production URL" and activate the workflow for the live deployment to function correctly.
+
+### Future Improvements
+- **Security:** Currently using `localStorage` for JWT. In a production fintech app, I would switch to `HttpOnly Cookies` to prevent XSS.
+- **Validation:** Add stronger Zod validation for email formats on the backend.
