@@ -8,7 +8,7 @@ const Login = ({ setAuth }) => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL = 'https://hub-loginpage.onrender.com/'; // Change this when deploying
+  const API_URL = 'https://hub-loginpage.onrender.com';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
